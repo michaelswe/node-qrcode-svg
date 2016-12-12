@@ -1,11 +1,12 @@
 # Generate QR code bitmaps or svg files on node server
 
-javascript-qrcode.
+Based on https://github.com/siciarek/javascript-qrcode
+and https://github.com/awesomejerry/react-native-qrcode-svg
 
 ## Features
 
-* Batch render qr codes as svg files
-* Convert to bitmap with imagemagick
+* Batch render QR codes as SVG files
+* Convert to bitmap with ImageMagick
 
 ## Installation
 
@@ -25,10 +26,10 @@ brew remove imagemagick
 brew install imagemagick --with-rsvg
 ```
 
-### Examples
+### Example
 
 ```
-let qr = require('./index')
+let qr = require('./generate')
 let fs = require('fs')
 let uuid = require('uuid')
 
