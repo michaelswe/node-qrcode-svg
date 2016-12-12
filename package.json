@@ -1,0 +1,28 @@
+{
+  "name": "michaelswe-node-qrcode",
+  "version": "0.1.0",
+  "description": "A QR Code SVG generator for Node based on javascript-qrcode.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/michael_swe/node-qrcode-svg.git"
+  },
+  "keywords": [
+    "node",
+    "qrcode",
+    "svg"
+  ],
+  "author": "awesomejerry, michaelswe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michael_swe/node-qrcode-svg/issues"
+  },
+  "homepage": "https://github.com/michael_swe/node-qrcode-svg#readme",
+  "dependencies": {
+    "javascript-qrcode": "git+https://git@github.com/awesomejerry/javascript-qrcode.git"
+  },
+  "devDependencies": {
+  }
+}
