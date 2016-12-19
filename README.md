@@ -15,7 +15,7 @@ Imagemagick need to be installed with rsvg to properly render bitmaps from svg f
 On OSX:
 
 ```
-brew install imagemagick --with-rsvg
+brew install imagemagick --with-librsvg
 ```
 
 The rsvg option needs to be added at compile time. If Imagemagick is already
@@ -23,7 +23,7 @@ installed without rsvg you need to remove it before installing with rsvg.
 
 ```
 brew remove imagemagick
-brew install imagemagick --with-rsvg
+brew install imagemagick --with-librsvg
 ```
 
 ### Example
@@ -46,6 +46,15 @@ Convert svg files to bitmap with ImageMagick. I'm leaving this part out of the
 node code for now, as I don't need the full automation yet.
 ```
 mogrify -format png ./svg/*
+```
+
+Use -density to set the print size of the image. To get a 14 mm wide QR code
+the density needs to be 544 if the image size is 300x300 pixels.
+
+300px * 25.4 / 14mm = 544dpi
+
+```
+mogrify -density 544 -format png ./svg/*
 ```
 
 ### Dependencies
